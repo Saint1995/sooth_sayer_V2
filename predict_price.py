@@ -14,7 +14,7 @@ from keras.layers import Dense
 
 
 column_names = ['type','location','current_price','years','brand','resell_price']
-raw_dataset = pd.read_csv('C:\\Users\Samuel Theophilus\\PycharmProjects\\ML101\\data.csv', names=column_names,na_values = "?", comment='\t', skipinitialspace=True)
+raw_dataset = pd.read_csv('C:\\Users\Sam\\PycharmProjects\\ML101\\data.csv', names=column_names,na_values = "?", comment='\t', skipinitialspace=True)
 dataset = raw_dataset.copy()
 
 print(dataset)
