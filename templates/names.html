@@ -1,0 +1,266 @@
+<!--
+=========================================================
+* Argon Design System - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block title %}
+    <title>
+    Nnitiwe's ML tooys
+  </title>
+  {% endblock %}
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% load static %}
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Nucleo Icons -->
+  <link href="{% static 'assets/css/nucleo-icons.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/nucleo-svg.css' %}" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/nucleo-svg.css' %}" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{% static 'assets/css/argon-design-system.css' %}" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+{% block content %}{% endblock %}
+  <!-- Navbar -->
+  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+    <div class="container">
+      <a class="navbar-brand mr-lg-5" href="{% url 'index' %}">
+        <img src="{% static 'assets/img/brand/white.png' %}">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar_global">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="{% url 'index' %}">
+                <img src="{% static 'assets/img/brand/blue.png' %}">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+              <i class="ni ni-collection d-lg-none"></i>
+              <span class="nav-link-inner--text">ML Projects</span>
+            </a>
+            <div class="dropdown-menu">
+              <a href="{% url 'summarizer' %}" class="dropdown-item">Document Summarizer</a>
+              <a href="{% url 'twitter' %}" class="dropdown-item">Tweets Sentiment Analysis</a>
+              <a href="{% url 'nigerian_names' %}" class="dropdown-item">Predict Region using Your Name</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.facebook.com/nnitiwe" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+              <i class="fa fa-facebook-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.instagram.com/nnitiwe" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+              <span class="nav-link-inner--text d-lg-none">Instagram</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://twitter.com/nnitiwe" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+              <i class="fa fa-twitter-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.kaggle.com/nnitiwe/" target="_blank" data-toggle="tooltip" title="Star me on Kaggle">
+              <i class="fab fa-kaggle"></i>
+              <span class="nav-link-inner--text d-lg-none">Kaggle</span>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block ml-lg-4">
+
+            <a href="mailto: nnitiwe@gmail.com" target="_blank" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon">
+                <i class="fa fa-envelope mr-2"></i>
+              </span>
+              <span class="nav-link-inner--text">Send Mail</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="section section-hero section-shaped">
+      <div class="shape shape-style-1 shape-primary">
+        <span class="span-150"></span>
+        <span class="span-50"></span>
+        <span class="span-50"></span>
+        <span class="span-75"></span>
+        <span class="span-100"></span>
+        <span class="span-75"></span>
+        <span class="span-50"></span>
+        <span class="span-100"></span>
+        <span class="span-50"></span>
+        <span class="span-100"></span>
+      </div>
+      <div class="page-header">
+        <div class="container shape-container d-flex align-items-center py-lg">
+          <div class="col px-0">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h3 class="text-white">PREDICT YOUR REGION</h3>
+
+                  <p class="lead text-white">This app takes your Full name as input and predicts your Origin in Nigeria <b>(EAST, WEST or NORTH Region)</b>. The Model used in this app was trained on a dataset of over 4,900 Nigerian Names (Full Names) and scored an accuracy of <b>96.37%</b>.</p>
+                <div class="btn-wrapper mt-5">
+
+                 {% comment %} <a href="https://github.com/nnitiwe-dev" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
+                    <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+                    <span class="btn-inner--text"><span class="text-warning">Star me</span> on Github</span>
+                  </a>{% endcomment %}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <div class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+
+            <!-- Buttons -->
+            <h3 class="h4 text-success font-weight-bold mb-4">Give it a Try</h3>
+          <i class="text-black-50"><b><i class="fas fa-exclamation-triangle"></i>Biased Dataset used for training </b></i>
+            <form action="{% url 'nigerian_names' %}" method="get">
+            <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                <div class="form-group">
+                  <input type="text" name="fullname" placeholder="Enter Your FULLNAME e.g. John Doe" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 col-sm-12">
+                      <center><input type="submit" class="btn btn-primary" value="Predict my Region"/></center>
+                  </div>
+              </div>
+            </div>
+            </form>
+            <!-- Back to top button -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    {% if fullname %}
+                        <br><br>
+                       <h3 class="h4 text-black-50 font-weight-bold mb-4">Sooth Sayer<i class="fa fa-user-secret" aria-hidden="true"></i> Says:</h3>
+
+                        <center><h2><i class="text-black-50 fa fa-magic" aria-hidden="true"></i></h2></center>
+                        <p><h5 class="text-success">Dear {{ fullname }},</h5><br> You are from <h5 class="text-success"><b><i>{{ region }} Nigeria</i></b></h5>.</p>
+                    {% endif %}
+
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="footer has-cards">
+    <div class="container container-lg">
+
+    </div>
+    <div class="container">
+      <div class="row row-grid align-items-center my-md">
+
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2020 <a href="" target="_blank">Nnitiwe</a>.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="" class="nav-link" target="_blank">A Creative Tim Theme</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="{% static 'assets/js/core/jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'assets/js/core/popper.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'assets/js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'assets/js/plugins/perfect-scrollbar.jquery.min.js' %}"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{% static 'assets/js/plugins/bootstrap-switch.js' %}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{% static 'assets/js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'assets/js/plugins/moment.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugins/datetimepicker.js' %}" type="text/javascript"></script>
+  <script src="{% static 'assets/js/plugins/bootstrap-datepicker.min.js' %}"></script>
+  <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script src="{% static 'assets/js/argon-design-system.min.js' %}" type="text/javascript"></script>
+  <script>
+    function scrollToDownload() {
+
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
