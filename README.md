@@ -1,6 +1,7 @@
 # Sooth Sayer
 This is a Machine Learning Web-based project with a number of NLP model integration. The System aims to help Data Science Beginners with a basic guide to develop a skill in ML and Data Science through practical application.
 
+![Website Preview](https://github.com/nnitiwe-dev/sooth_sayer/blob/master/static/assets/img/ML-tooys.png)
 
 # Project Folder Structure
 ```bash
